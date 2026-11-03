@@ -1,0 +1,19 @@
+# Core (needed by submission.ipynb: feature engine, train() and infer())
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+catboost          # imported by the notebook; blend weight is 0 in the final model
+torch             # trains the GRU null model offline only; infer() uses a numpy port
+joblib
+pyarrow           # parquet I/O for the competition data
+
+# CrunchDAO tooling (data download, notebook conversion, local test, submission)
+crunch-cli
+
+# Research and experiment scripts
+optuna            # experiments/tune_overnight.py
+xgboost           # experiments/blend_experiment.py
+matplotlib        # diagnostic plots
+psutil            # memory reporting in research.ipynb
